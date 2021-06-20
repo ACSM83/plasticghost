@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Varela+Round&display=swap" rel="stylesheet">
+    <!-- Styles -->
+    <link href="css/inicio.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script src="JS/inicio.js"></script>
+
+    <title>Plastic Ghost - Game</title>
+</head>
+<body>
+<main>
+
+    <div id="missaobox">
+
+        <div class="content text-center m-5">
+
+            <div>
+
+                <img class="planet" src="Imagens/terra.png">
+
+                <h1 class="title_mission">Missão Urgente</h1>
+            </div>
+
+            <div>
+                <p>Esta é uma missão confidencial. Para ter acesso a esta missão precisamos de confirmar
+                    a identidade do nosso agente secreto.</p>
+                <div id="pfvr_nome" class="font-weight-bold">
+                    <p>Por favor, insira o seu nome:</p>
+                </div>
+                <input class="form-control" id="nome">
+                <br>
+                <button id="btn_validar" class="btn btn-primary text-center">Abrir Mensagem</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="iniciobox">
+
+        <div class="content text-justify m-5">
+
+            <div class="text-center">
+                <br>
+                <p>
+                <h1 class="title_mission">Plastic Ghost</h1>
+                </p>
+            </div>
+
+            <h4>Olá, agente <span id="nome_agente" class="font-weight-bold">nome</span>!</h4>
+            <p> Precisamos da tua ajuda para salvar o oceanos. Desenvolvemos um submarino com um radar super especial
+                que nos permite localizar microplásticos espalhados pelo oceano e recolhê-los e salvar a vida dos nossos
+                animais marinhos!</p>
+
+
+            <table>
+                <tr class="text-justify">
+                    <td class="text-center">
+                        <img id='submarino' src='Imagens/jogador_direita.png'/>
+                    </td>
+
+                    <td><p><span class="font-weight-bold"> SUBMARINO:</span> Move o nosso submarino e chega em direção
+                        aos microplásticos para limpar todo o oceano o mais rápido possível e resgatar os animais
+                        marinhos!</p>
+                    </td>
+                </tr>
+
+                <tr class="text-justify">
+                    <td class="text-center">
+                        <img id='microplasticos' src='Imagens/microplastico.png'/>
+                    </td>
+
+                    <td>
+                        <span class="font-weight-bold"> MICROPLÁSTICOS:</span> Os microplásticos são estes pontos
+                        verdes. Embora sejam invisíveis a olho nú, com o nosso dispositivo conseguimos
+                        localizá-los.
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <p class="font-weight-bold">Aceitas esta missão?</p>
+
+            <button type="button" class="btn btn-primary" id="btn_aceito">Aceito!</button>
+        </div>
+    </div>
+
+    <div id="instrucaobox">
+
+        <div class="content text-justify m-5">
+
+            <div class="text-center">
+                <br>
+                <p>
+                <h1 class="title_mission">Instruções</h1>
+                </p>
+            </div>
+
+            <h4 class="font-weight-bold">Movimento</h4>
+
+            <table class="text-justify">
+                <tr>
+                    <td colspan="2"><p>Use as teclas abaixo para mover o submarino:</p></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">
+                        <img id="wasd" src="Imagens/arrowKeys.png">
+                    </td>
+                    <td width="70%">&emsp; &emsp; <span class="font-weight-bold">&#8593;</span> Para cima</td>
+                </tr>
+
+                <tr>
+                    <td>&emsp; &emsp; <span class="font-weight-bold">&#8595;</span> Para baixo</td>
+                </tr>
+
+                <tr>
+                    <td>&emsp; &emsp; <span class="font-weight-bold">&#8592;</span> Para esquerda</td>
+                </tr>
+
+                <tr>
+                    <td>&emsp; &emsp; <span class="font-weight-bold">&#8594;</span> Para direita</td>
+                </tr>
+
+            </table>
+            <br>
+            <h4 class="font-weight-bold">Obstáculos</h4>
+
+            <table class="text-justify">
+                <tr>
+                    <td colspan="4"><p>Desvie-se do lixo para não perder tempo!</p></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img class="lixo1 " src="Imagens/lixo_obst2.png">
+
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <p class="font-weight-bold">Contamos contigo!</p>
+
+            <a href="level1.html">
+                <button type="button" class="btn btn-primary" id="btn_iniciar">Iniciar</button>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="levelbox">
+
+        <div class="content text-center m-5">
+
+            <div>
+                <h1 class="title_mission pt-3">Nivel I</h1>
+            </div>
+
+            <div>
+                <p>Apanha todos os microplásticos em 30 segundos e salve os animais marinhos!</p>
+
+                <button type="button" class="btn btn-success " id="btn_jogar">Jogar</button>
+
+            </div>
+        </div>
+    </div>
+    <div id="perdeubox">
+
+        <div class="content text-center m-5">
+
+            <div>
+                <h1 class="title_mission pt-3">Missão Falhou</h1>
+            </div>
+
+            <div>
+                <p>O tempo acabou. É preciso aprimorar suas habilidades. Gostaria de uma nova chance?</p>
+                <a href="level1.html">
+                    <button id="btn_perdeu" class="btn btn-primary text-center">Tentar Novamente</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="fimbox">
+
+        <div class="text-center m-5">
+            <div>
+                <h4> Parabéns, agente!</h4>
+            </div>
+
+            <div>
+                <p>Conseguiste! Salvaste os oceanos. Sabíamos que podíamos contar com você!</p>
+                <a href="inicio.html">
+                    <button id="novo_jogo" class="btn btn-primary text-center">Jogar Novamente</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+</body>
+</html>

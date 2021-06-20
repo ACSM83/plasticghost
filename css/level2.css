@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font-family: "Varela Round", sans-serif;
+    background-color: #00384f;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+aside{
+    position: absolute;
+    left:50px;
+    top:50px;
+}
+
+.content span {
+    font-weight: bold;
+}
+
+#levelbox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 480px;
+    margin-top: 125px;
+    margin-left: 430px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+#perdeubox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 480px;
+    margin-top: 125px;
+    margin-left: 430px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#fimbox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 480px;
+    margin-top: 125px;
+    margin-left: 430px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#div_ajuda, #fim_jogoVit, #fim_jogoPer {
+    background-color: #242233;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    height: 100%;
+    width: 100%;
+
+    /* Required for IE 5, 6, 7 */
+    /* ...or something to trigger hasLayout, like zoom: 1; */
+
+    /* http://css-tricks.com/64-css-transparency-settings-for-all-broswers/ */
+    /* Theoretically for IE 8 & 9 (more valid) */
+    /* ...but not required as filter works too */
+    /* should come BEFORE filter */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=95);
+
+    /* Older than Firefox 0.9 */
+    -moz-opacity: 0.95;
+
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0.95;
+    /* Modern!
+                /* Firefox 0.9+, Safari 2?, Chrome any?
+                /* Opera 9+, IE 9+ */
+    opacity: 0.95;
+}
+
+#div_ajuda, #fim_jogoPer, #fim_jogoVit h2 {
+    padding: 30px;
+    text-align: justify;
+}
+
+#btn_jogar, #btn_proximonivel, #btn_reiniciar, #btn_reiniciar2, #novo_jogo, #btn_perdeu {
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 30px;
+    padding: 5px 25px;
+    color: white;
+    border: 1px solid white;
+    width: 40%;
+}
+
+#main {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1% 200px;
+    width: 960px;
+    height: 580px;
+    color: white;
+    z-index: -2;
+}
+
+#tempo_txt, #pontos_txt,#vida_txt {
+    background-color: #72b445;
+    box-shadow: 3px 4px #242233;
+    border-radius: 40px;
+    width: 40%;
+    color: white;
+    text-align: center;
+
+}
+
+img {
+    position: absolute;
+}
+
+#jogador {
+    z-index: 100;
+
+}
+
+

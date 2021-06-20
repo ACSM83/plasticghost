@@ -1,0 +1,147 @@
+@font-face {
+    font-family: TopSecret;
+    src: url("../top_secret_kb/Top Secret.ttf")
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+    background-color: #00384f;
+    overflow: hidden;
+}
+#imgFundo{
+    height: 80%;
+
+}
+
+.lixo1{
+    height:45%;
+}
+.planet {
+    width: 50%;
+    height: 50%;
+}
+
+
+
+#missaobox {
+    background-image: url("../Imagens/file.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 550px;
+    width: 590px;
+    margin: auto;
+    padding-top: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#iniciobox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 590px;
+    margin: auto;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#instrucaobox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 590px;
+    margin: auto;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#levelbox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 480px;
+    margin-top: 125px;
+    margin-left: 430px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#levelbox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 480px;
+    margin-top: 125px;
+    margin-left: 430px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#perdeubox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 480px;
+    margin-top: 125px;
+    margin-left: 430px;
+    padding: 0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#fimbox {
+    background-image: url("../Imagens/paper.jpg");
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 480px;
+    margin-top: 125px;
+    margin-left: 430px;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#btn_validar {
+    background-color: #72b445;
+}
+
+#btn_aceito {
+    background-color: #72b445;
+}
+
+#btn_iniciar {
+    background-color: #72b445;
+}
+
+#btn_lvl1 {
+    background-color: #72b445;
+}
+
+#btn_lvl2 {
+    background-color: #72b445;
+}
+
+#btn_perdeu {
+    background-color: #ff253a;
+}
+
+.title_mission {
+    font-family: TopSecret;
+}
+
+#submarino {
+    margin-right: 10px;
+}
+
+#microplasticos {
+    margin-right: 10px;
+}
+
+#wasd {
+    width: 100%;
+}
